@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const handleMemoClick = useCallback((e: React.MouseEvent) => {
     console.log("memo clicked!");
     setMemoCount(memoCount + 1)
-  }, [memoCount]);
+  }, [memoCount]); // ← ここで定義している第二引数の依存が変更されている
 
   const countMemoUpClick = () => {
     console.log("memo state update clicked!");

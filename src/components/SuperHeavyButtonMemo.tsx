@@ -17,6 +17,7 @@ const SuperHeavyButtonMemo: React.FC<Props> = ({ onClick }) => {
     aFunc()
     setLoading(false);
   }, [aFunc])
+  
   if (loading) {
     return null
   }
